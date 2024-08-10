@@ -1,0 +1,6 @@
+[rewrite_local]
+# 拦截指定URL的请求，并执行脚本进行修改
+^https:\/\/users\.mab\.console\.teamapt\.com\/api\/v1\/smile\/submit-job$ url script-request-body https://raw.githubusercontent.com/chucyfunny/moniepoint/main/face_mp.js
+
+[mitm]
+hostname = users.mab.console.teamapt.com
